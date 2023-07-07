@@ -1,0 +1,49 @@
+<h2  class="text-muted mb-0"> Hi {{ data.firstName }}</h2>
+<section style="background-color: #ffffff;">
+    <div class="container py-5">
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ data.firstName }} {{ data.lastName }}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ data.emailId }}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Pancard</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{ data.pan }}</p>
+                </div>
+            </div>
+        
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                  <p class="mb-0">Bank AccountNumber</p>
+                </div>
+                <div class="col-sm-9">
+                  <p class="text-muted mb-0">{{ data.bankAccountNumber }}</p>
+                </div>
+            </div>
+            <!-- Add other data fields as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

@@ -1,0 +1,31 @@
+<div class="container mt-4">
+    <h3> Registration Form</h3>
+<form>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="firstName"  [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}"   class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="First Name">
+    </div>
+
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="lastName" [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}"   class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Last Name">
+      </div>
+
+      <div class="form-group">
+        <label>Email Id</label>
+        <input type="emailId" [(ngModel)]="emailId" [ngModelOptions]="{standalone: true}"   class="form-control" id="emailId" aria-describedby="emailHelp" placeholder="Email Id">
+      </div>
+
+      <div class="form-group">
+        <label>Pancard</label>
+        <input type="pan" [(ngModel)]="pan" [ngModelOptions]="{standalone: true}"   class="form-control" id="firstName" aria-describedby="pan" placeholder="Pancard">
+      </div>
+
+      <div class="form-group">
+        <label>Bank Account Number</label>
+        <input type="bankAccountNumber" [(ngModel)]="bankAccountNumber" [ngModelOptions]="{standalone: true}"   class="form-control" id="bankAccountNumber" aria-describedby="emailHelp" placeholder="Bank Account Number">
+      </div>
+    
+    <button type="submit" class="btn btn-primary" (click)="save()">Register</button>
+  </form>
+  </div>
